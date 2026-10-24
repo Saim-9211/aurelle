@@ -1,0 +1,671 @@
+/* Readable secondary copy and comfortable controls across the operational UI. */
+:root {
+  --muted: #716f61;
+}
+.sidebar {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #d9d5c9 transparent;
+}
+.sidebar .brand,
+.branch-switch,
+.sidebar nav,
+.sidebar-bottom {
+  flex-shrink: 0;
+}
+.nav-item {
+  font-size: 13px;
+  min-height: 44px;
+  color: #6f7265;
+}
+.brand-tagline {
+  color: #747564;
+  font-size: 8px;
+}
+.nav-label {
+  color: #7c7868;
+  font-size: 10px;
+}
+.branch-switch strong {
+  font-size: 13px;
+}
+.branch-switch select {
+  color: #77705e;
+  font-size: 11px;
+}
+.sidebar-user strong {
+  font-size: 12px;
+}
+.sidebar-user small {
+  color: #7d7462;
+  font-size: 10px;
+}
+.studio-note p {
+  color: #77775f;
+  font-size: 11px;
+}
+.studio-note button {
+  font-size: 11px;
+  min-height: 33px;
+}
+.page-heading p {
+  font-size: 13px;
+  color: #777463;
+}
+.eyebrow {
+  font-size: 9px;
+  color: #85765e;
+}
+.btn {
+  min-height: 44px;
+  font-size: 12px;
+}
+.btn.small {
+  min-height: 38px;
+  font-size: 11px;
+}
+.icon-btn {
+  min-height: 40px;
+  min-width: 40px;
+}
+.text-link {
+  font-size: 11px;
+  min-height: 32px;
+  color: #8d6849;
+}
+.topbar .breadcrumb {
+  font-size: 12px;
+}
+.global-search input {
+  font-size: 12px;
+  width: 185px;
+}
+.welcome-strip {
+  font-size: 11px;
+  color: #6f765e;
+}
+.welcome-strip a {
+  font-size: 10px;
+}
+.metric-top {
+  font-size: 11px;
+  color: #6f715e;
+}
+.metric-foot {
+  font-size: 10px;
+  color: #797260;
+}
+.metric-foot small {
+  font-size: 9px;
+  color: #768160;
+}
+.card-heading p {
+  font-size: 11px;
+  color: #7b7765;
+}
+.card-bottom-link {
+  font-size: 10px;
+  color: #79745e;
+}
+.schedule-head strong {
+  font-size: 11px;
+}
+.schedule-head small {
+  font-size: 8px;
+  color: #817b66;
+}
+.appointment-block strong {
+  font-size: 10px;
+}
+.appointment-block > span {
+  font-size: 9px;
+}
+.appointment-block small {
+  font-size: 8px;
+}
+.studio-now {
+  align-self: start;
+}
+.studio-now .card-heading p {
+  font-size: 9px;
+}
+.client-info strong {
+  font-size: 11px;
+}
+.client-info small {
+  font-size: 10px;
+  color: #7a735f;
+}
+.client-info > span {
+  font-size: 8px;
+  color: #877b64;
+}
+.tiny-state {
+  font-size: 8px;
+}
+.queue-summary {
+  font-size: 10px;
+  color: #79715d;
+}
+.legend {
+  font-size: 9px;
+  color: #7d765f;
+}
+.revenue-chart .recharts-text {
+  font-size: 10px;
+}
+.chart-meta small {
+  font-size: 9px;
+  color: #84775e;
+}
+.mix-row > div > div:first-child {
+  font-size: 11px;
+}
+.mix-row > div > div > span {
+  font-size: 10px;
+  color: #80755e;
+}
+.mix-foot {
+  font-size: 10px;
+  color: #81765f;
+}
+table {
+  font-size: 12px;
+}
+th {
+  font-size: 10px;
+  color: #7c715a;
+}
+td {
+  font-size: 12px;
+}
+.cell-client strong {
+  font-size: 12px;
+}
+.cell-client small {
+  font-size: 10px;
+  color: #83765f;
+}
+.badge {
+  font-size: 10px;
+}
+.tag {
+  font-size: 10px;
+}
+.field {
+  font-size: 12px;
+}
+.field input,
+.field select,
+.field textarea {
+  font-size: 14px;
+  min-height: 44px;
+}
+.field > span {
+  color: #71664f;
+}
+.field small {
+  font-size: 11px;
+  color: #827357;
+}
+.check-label {
+  font-size: 12px;
+  color: #7e7055;
+}
+.form-note {
+  font-size: 11px;
+  color: #847356;
+}
+.form-error {
+  font-size: 12px;
+  color: #9a4e35;
+}
+.slot-grid strong {
+  font-size: 13px;
+}
+.slot-grid small {
+  font-size: 10px;
+  color: #837153;
+}
+.modal-heading p {
+  font-size: 12px;
+  color: #817359;
+}
+.modal-heading .eyebrow {
+  font-size: 8px;
+}
+.modal-heading h2 {
+  font-size: 33px;
+}
+.summary-line {
+  font-size: 12px;
+  color: #807052;
+}
+.summary-line strong {
+  color: #716145;
+}
+.step-card p {
+  font-size: 11px;
+  color: #817153;
+}
+.step-card > small {
+  font-size: 10px;
+  color: #8b7756;
+}
+.step-card h4 {
+  font-size: 13px;
+}
+.detail-top p {
+  font-size: 11px;
+  color: #827153;
+}
+.plan-timeline strong {
+  font-size: 12px;
+}
+.plan-timeline small {
+  font-size: 10px;
+  color: #857252;
+}
+.queue-column-title h3 {
+  font-size: 13px;
+}
+.queue-column-title p {
+  font-size: 10px;
+  color: #88775a;
+}
+.queue-client-card h3 {
+  font-size: 14px;
+}
+.queue-client-card > p {
+  font-size: 12px;
+  color: #837154;
+}
+.queue-professional {
+  font-size: 10px;
+  color: #897657;
+}
+.queue-time {
+  font-size: 10px;
+  color: #887456;
+}
+.queue-card-bottom {
+  font-size: 9px;
+  color: #8b7758;
+}
+.service-card > p {
+  font-size: 12px;
+  color: #827154;
+}
+.service-duration {
+  font-size: 10px;
+  color: #897453;
+}
+.service-category {
+  color: #8f7754;
+}
+.team-card-body > p {
+  font-size: 11px;
+  color: #857151;
+}
+.team-numbers span {
+  font-size: 9px;
+  color: #8b7653;
+}
+.team-break {
+  font-size: 10px;
+  color: #8d7753;
+}
+.settings-title p {
+  font-size: 12px;
+  color: #847153;
+}
+.settings-fixed {
+  font-size: 12px;
+}
+.connection-row p {
+  font-size: 11px;
+  color: #877252;
+}
+.connection-row strong {
+  font-size: 13px;
+}
+.settings-tabs button {
+  font-size: 12px;
+  min-height: 44px;
+}
+.notice p {
+  font-size: 12px;
+  color: #77815e;
+}
+.notice.warm p {
+  color: #887451;
+}
+.report-definitions p {
+  font-size: 12px;
+  color: #857153;
+}
+.ai-report > p {
+  font-size: 12px;
+  color: #7b825e;
+}
+.assistant-intro p {
+  font-size: 12px;
+  color: #827051;
+}
+.prompt-suggestions button {
+  font-size: 12px;
+  color: #89714f;
+}
+.timezone-note {
+  font-size: 10px;
+  color: #80745c;
+}
+.receipt-link strong {
+  font-size: 12px;
+}
+.receipt-link small {
+  font-size: 10px;
+  color: #887356;
+}
+.customer-hero .hero-copy > p {
+  font-size: 14px;
+  color: #857254;
+}
+.customer-nav button {
+  font-size: 12px;
+  color: #827052;
+}
+.customer-service strong {
+  font-size: 14px;
+}
+.customer-service p {
+  font-size: 11px;
+  color: #877352;
+}
+.customer-service small {
+  font-size: 10px;
+  color: #8e7754;
+}
+.customer-service > span:last-child > strong {
+  font-size: 12px;
+}
+.customer-summary > p {
+  font-size: 12px;
+  color: #7d865e;
+}
+.customer-summary .summary-line {
+  font-size: 12px;
+}
+.customer-summary .field > span {
+  font-size: 11px;
+  color: #7a815e;
+}
+.customer-summary .field input,
+.customer-summary .field select {
+  font-size: 13px;
+}
+.customer-contact {
+  font-size: 12px;
+  color: #7d805e;
+}
+.customer-time-card p {
+  font-size: 12px;
+  color: #897453;
+}
+.customer-time-summary .summary-line small {
+  font-size: 11px;
+  color: #8b7451;
+}
+.customer-verify > p {
+  font-size: 12px;
+  color: #897452;
+}
+.my-visit > p {
+  font-size: 12px;
+  color: #887350;
+}
+.my-visit > small {
+  font-size: 11px;
+}
+.login-form > p,
+.demo-entry > p {
+  font-size: 12px;
+  color: #887455;
+}
+.login-editorial p {
+  color: #7d855f;
+}
+.login-form > .text-link {
+  font-size: 12px;
+}
+@media (max-width: 1220px) {
+  .global-search input {
+    width: 150px;
+  }
+  .nav-item {
+    font-size: 12px;
+  }
+  .metric-top {
+    font-size: 10px;
+  }
+  .metric-foot {
+    font-size: 9px;
+  }
+  .metric-foot small {
+    font-size: 8px;
+  }
+  .page-heading p {
+    font-size: 12px;
+  }
+  .card-heading p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .btn,
+  .heading-actions .btn {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .btn.small {
+    font-size: 11px;
+    min-height: 40px;
+  }
+  .icon-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  .date-nav > .icon-btn {
+    min-width: 30px;
+    min-height: 38px;
+  }
+  .metric-top {
+    font-size: 11px;
+  }
+  .metric-foot {
+    font-size: 10px;
+  }
+  .metric-foot small {
+    font-size: 9px;
+  }
+  .welcome-strip {
+    font-size: 11px;
+  }
+  .welcome-strip a {
+    font-size: 10px;
+  }
+  .studio-client-list {
+    display: block;
+  }
+  .studio-client {
+    padding: 15px 0;
+  }
+  .client-info strong {
+    font-size: 12px;
+  }
+  .client-info small {
+    font-size: 11px;
+  }
+  .client-info > span {
+    font-size: 9px;
+  }
+  .tiny-state {
+    font-size: 9px;
+  }
+  .topbar .breadcrumb {
+    font-size: 10px;
+  }
+  .global-search input {
+    width: 138px;
+    font-size: 11px;
+  }
+  .card-heading p {
+    font-size: 10px;
+  }
+  .card-heading h2 {
+    font-size: 23px;
+  }
+  .date-label {
+    font-size: 9px;
+  }
+  .settings-tabs button {
+    font-size: 11px;
+    min-height: 44px;
+  }
+  .team-numbers span {
+    font-size: 8px;
+  }
+  .queue-column-title p {
+    font-size: 10px;
+  }
+  .service-card > p {
+    font-size: 12px;
+  }
+  .field-pair {
+    gap: 12px;
+  }
+  .modal-actions .btn {
+    font-size: 12px;
+  }
+  .detail-top p {
+    font-size: 11px;
+  }
+  .slot-grid strong {
+    font-size: 14px;
+  }
+  .slot-grid small {
+    font-size: 11px;
+  }
+  .customer-time-card .slot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .customer-progress {
+    font-size: 9px;
+  }
+  .customer-header > .customer-nav button {
+    font-size: 12px;
+  }
+  .customer-service {
+    flex-wrap: wrap;
+  }
+  .customer-service > div {
+    min-width: 180px;
+  }
+  .customer-service > span:last-child {
+    min-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #e5dac5;
+    padding-top: 12px;
+  }
+  .customer-service strong {
+    font-size: 14px;
+  }
+  .customer-service p {
+    font-size: 12px;
+  }
+  .customer-service small {
+    font-size: 11px;
+  }
+  .customer-service > span:last-child > strong {
+    font-size: 13px;
+  }
+  .customer-summary .btn {
+    font-size: 13px;
+  }
+  .customer-header > .flex > .text-link {
+    font-size: 10px;
+  }
+  .customer-time-summary .summary-line small {
+    font-size: 11px;
+  }
+  .customer-hero .hero-copy > p {
+    font-size: 13px;
+  }
+  .customer-contact {
+    font-size: 11px;
+  }
+}
+@media (max-width: 420px) {
+  .global-search input {
+    width: 115px;
+  }
+  .breadcrumb {
+    gap: 3px;
+  }
+  .topbar {
+    padding: 0 9px;
+  }
+  .topbar .icon-btn {
+    min-width: 34px;
+  }
+  .customer-progress > span > span {
+    font-size: 8px;
+  }
+  .customer-service > div {
+    min-width: 140px;
+  }
+  .customer-hero .hero-copy > p {
+    max-width: 270px;
+  }
+  .team-numbers span {
+    font-size: 9px;
+  }
+  .team-card-body > p {
+    font-size: 12px;
+  }
+  .team-break {
+    font-size: 11px;
+  }
+  .inventory-metrics .metric-foot {
+    font-size: 9px;
+  }
+  .inventory-metrics .metric-foot small {
+    font-size: 8px;
+  }
+  .team-card-body > .btn {
+    font-size: 12px;
+  }
+  .modal {
+    padding: 20px;
+  }
+  .check-label {
+    font-size: 11px;
+  }
+  .field {
+    font-size: 12px;
+  }
+  .step-actions .btn {
+    font-size: 11px;
+  }
+  .section-label {
+    font-size: 9px;
+  }
+  .wizard-steps {
+    font-size: 10px;
+  }
+  .customer-contact {
+    font-size: 11px;
+  }
+}
